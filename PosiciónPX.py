@@ -9,7 +9,7 @@ def mostrar_posicion(event, x, y, flags, param):
         cv2.imshow("Imagen", img)
 
 # Cargar imagen
-img = cv2.imread("M:\\Users\\mahyro\\Documents\\Universidad\\2025-2\\Procesamiento Digital de Imagenes\\Tarea1\\VideoParaTrabajo1\\frames_extraidos\\frame_0018.png")
+img = cv2.imread("M:\\Users\\mahyro\\Documents\\Universidad\\2025-2\\Procesamiento Digital de Imagenes\\Tarea1\\VideoParaTrabajo1\\frames_extraidos\\frame_0020.png")
 img= cv2.resize(img, (700, 425))
 
 cv2.imshow("Imagen", img)

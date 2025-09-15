@@ -25,6 +25,8 @@ frame_fin = int(tiempo_fin * fps)
 
 frame_num = 0
 
+kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+
 while True:
     ret, frame = cap.read()
     if not ret:
@@ -38,7 +40,10 @@ while True:
 
     mask = cv2.inRange(hsv, lower, upper)
 
-    #cv2.imshow('Mascara', mask)
+    # Operación morfológica de closing
+    mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
+
+    cv2.imshow('Mascara', mask)
     #cv2.imshow('HSV', hsv)
 
     if frame_inicio <= frame_num <= frame_fin:
@@ -56,7 +61,7 @@ while True:
 
                 cv2.circle(frame, (cx, cy), 5, (0, 255, 0), -1)
 
-        cv2.imshow("Centroides", frame)
+        #cv2.imshow("Centroides", frame)
 
     frame_num += 1
 
