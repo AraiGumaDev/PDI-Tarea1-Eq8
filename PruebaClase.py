@@ -14,7 +14,7 @@ def mouse_callback(event, _x, _y, flags, param):
     if event == cv2.EVENT_RBUTTONDOWN:
         pausar_video = not pausar_video
 
-video_path = 'M:\\Users\\mahyro\\Documents\\Universidad\\2025-2\\Procesamiento Digital de Imagenes\\Tarea1\\VideoParaTrabajo1\\VideoRecortado.mp4'
+video_path = 'VideoRecortado.mp4'
 cap = cv2.VideoCapture(video_path, cv2.CAP_MSMF)
 
 if not cap.isOpened():

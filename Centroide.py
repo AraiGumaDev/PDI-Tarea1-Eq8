@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-video_path = 'M:\\Users\\mahyro\\Documents\\Universidad\\2025-2\\Procesamiento Digital de Imagenes\\Tarea1\\VideoParaTrabajo1\\VideoRecortado.mp4'
+video_path = 'VideoRecortado.mp4'
 cap = cv2.VideoCapture(video_path, cv2.CAP_MSMF)
 
 if not cap.isOpened():
