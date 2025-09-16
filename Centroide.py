@@ -59,9 +59,9 @@ while True:
 
                 centroides.append((tiempo_segundos, cx, cy))
 
-                cv2.circle(frame, (cx, cy), 5, (0, 255, 0), -1)
+                cv2.circle(frame, (cx, cy), 5, (255, 0, 0), -1)
 
-        #cv2.imshow("Centroides", frame)
+        cv2.imshow("Centroides", frame)
 
     frame_num += 1
 
