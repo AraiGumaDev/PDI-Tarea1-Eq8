@@ -1,3 +1,6 @@
-# created by virtualenv automatically
-centroides.txt
+.gitignore
 .venv
+plots
+centroides.txt
+parametros_movimiento.txt
+resumen_movimiento.csv
