@@ -23,7 +23,7 @@ Luego, con la función **`cv2.findContours()`**, detecta el contorno y calcula e
 
 El resultado se guarda en un archivo llamado **`centroides.txt`**, que contiene la posición `(x, y)` del centroide y su respectiva marca de tiempo.
 
-![example 01_calcularCentroydes.py](https://imgur.com/4eODWHF)
+![example 01_calcularCentroydes.py](https://imgur.com/4eODWHF.png)
 
 > **Nota**: Para ajustar los valores de la máscara se recomienda usar el script auxiliar [aux_hallarRangosColores.py](#aux_hallarRangosColorespy).
 
@@ -34,7 +34,7 @@ Este script lee el archivo **`centroides.txt`**, realiza la conversión de píxe
 
 El resultado se guarda en el archivo **`parametros_movimiento.txt`**, que contiene las posiciones, velocidades y aceleraciones expresadas en unidades físicas.
 
-![example 02_calcularParametrosMoviento.py](https://imgur.com/kCTDC1u)
+![example 02_calcularParametrosMoviento.py](https://imgur.com/kCTDC1u.png)
 
 > **Nota**: Para estimar el diámetro en píxeles de su objeto en el video, se puede usar el script auxiliar [aux_calcularPosicionPX.py](#aux_calcularPosiciónpy).
 
@@ -50,7 +50,7 @@ Este script lee los archivos generados (**`centroides.txt`** y **`parametros_mov
 Las gráficas se muestran en pantalla y también se guardan en la carpeta **`plots/`**.  
 Además, genera un archivo **`resumen_movimiento.csv`** con los datos procesados.
 
-![example 03_dataInterpreter.py](https://imgur.com/PniF7AJ)
+![example 03_dataInterpreter.py](https://imgur.com/PniF7AJ.png)
 
 ---
 
